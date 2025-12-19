@@ -504,6 +504,7 @@
     padding: 2.5rem 1.25rem;
     display: grid;
     gap: 1.5rem;
+    justify-content: center;
 }
 
 .section-additional-module > h1 {
