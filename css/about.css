@@ -1,0 +1,327 @@
+main {
+    height: fit-content;
+    /* max-height: calc(90vh - 4.125rem); */
+    width: calc(100vw - 2.5rem);
+    padding: 4.125rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+main > img {
+    width: 100%;
+    background-image: url();
+    background-color: var(--black-40);
+    border-radius: 0.875rem;
+    aspect-ratio: 16 / 9;
+    max-height: 35rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+main > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+    margin-top: 2.625rem;
+}
+
+main > div > * {
+    text-align: center;
+}
+
+main > div > div > * {
+    color: var(--white-100);
+}
+
+@media (min-width: 768px) {
+    main {
+        width: calc(100vw - 2.625rem - 2.625rem);
+        padding: 4.125rem 2.625rem;
+    }
+
+    main > div {
+        width: 80vw;
+    }
+}
+
+@media (min-width: 1280px) {
+    main {
+        width: calc(100vw - 10rem);
+        padding: 4.125rem 5rem;
+    }
+
+    main > div {
+        width: 60vw;
+    }
+}
+
+/* Section-1 */
+.section-1 {
+    width: calc(100vw - 2.5rem);
+    padding: 3rem 1.25rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.section-1 > div {
+    width: 100%;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.section-1 > img {
+    background-image: url();
+    background-color: #EBEBFC;
+    border-radius: 0.75rem;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+.section-1 > div > div {
+    width: calc(100% - 1rem - 1rem);
+    display: grid;
+    grid-template-columns: 1.5rem 1fr;
+    gap: 1rem;
+    background-color: var(--primary-green-40);
+    color: var(--white-100);
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+
+.section-1 > div > div > svg {
+    width: 1.5rem;
+    aspect-ratio: 1 / 1;
+}
+
+@media (min-width: 768px) {
+    .section-1 {
+        width: calc(100vw - 2.625rem - 2.625rem);
+        padding: 5rem 2.625rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
+    .section-1 > div > div {
+        width: calc(100% - 3rem);
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .section-1 {
+        width: calc(100vw - 10rem);
+        padding: 5rem 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.625rem;
+    }
+
+    .section-1 > div {
+        gap: 1.125rem;
+    }
+}
+/* Section-1 */
+
+/* Section 2 */
+.section-2 {
+    width: calc(100vw - 2.5rem);
+    height: fit-content;
+    display: grid;
+    gap: 2.625rem;
+    margin-bottom: 2.625rem;
+}
+
+.section-2 > h1 {
+    max-width: calc(1600px - 2.5rem);
+    width: calc(100% - 2.5rem);
+    text-align: center;
+    padding: 0 1.25rem;
+}
+
+.section-2 > div {
+    max-width: 1600px;
+    width: calc(100vw - 2.5rem);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    overflow-x: scroll;
+    padding: 0 1.25rem;
+}
+
+.section-2 > div > div {
+    width: 60vw;
+    min-width: 17.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section-2 > div > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+}
+
+.section-2 > div > div > img {
+    background-image: url();
+    background-color: var(--black-40);
+    border-radius: 0.75rem;
+    aspect-ratio: 16 / 10;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .section-2 {
+        width: calc(100vw - 2.625rem - 2.625rem);
+        height: fit-content;
+        padding: 0 2.625rem;
+        display: grid;
+        gap: 2.625rem;
+        margin-bottom: 5rem;
+    }
+
+    .section-2 > div {
+        width: calc(100vw - 2.625rem - 2.625rem);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2vw;
+        padding: 0;
+        overflow-x: unset;
+    }
+
+    .section-2 > div > div {
+        width: 100%;
+        min-width: unset;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+   .section-2 {
+        width: calc(100vw - 10rem);
+        height: fit-content;
+        padding: 0 5rem;
+        display: grid;
+        gap: 2.625rem;
+        margin-bottom: 5rem;
+    }
+
+    .section-2 > div {
+        width: calc(100vw - 10rem);
+        gap: 2rem;
+    }
+}
+/* Section 2 */
+
+/* Section 3 */
+.section-3 {
+    width: 100vw;
+    max-width: unset;
+    display: grid;
+    padding: 3.5rem 0rem;
+    background: var(--text-gradient-green);
+    gap: 2rem;
+    margin: 2.625rem 0;
+}
+
+.section-3 > h1 {
+    text-align: center;
+    color: var(--white-100);
+    padding: 0 1.25rem;
+}
+
+.job-card-container {
+    width: calc(100vw - 2.5rem);
+    max-width: 1600px;
+    justify-self: center;
+    padding: 0 1.25rem 1.125rem 1.125rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.875rem;
+    overflow-x: scroll;
+}
+
+.job-card {
+    min-width: calc(17.5rem - 0.875rem - 0.875rem);
+    padding: 0.875rem;
+    background-color: var(--white-100);
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.job-card > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+}
+
+.job-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+}
+
+.job-card-details > div {
+    display: grid;
+    grid-template-columns: 1.5rem 1fr;
+    align-items: center;
+    gap: 1.125rem;
+}
+
+.job-card-details > div > svg {
+    width: 1.5rem;
+}
+
+.job-card button {
+    width: 100%;
+    justify-content: center;
+    ;
+}
+
+@media (min-width: 768px) {
+    .section-3 {
+        width: calc(100vw - 2.625rem - 2.625rem);
+        padding: 3.5rem 2.625rem;
+        gap: 2rem;
+    }
+
+    .job-card-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        overflow-x: unset;
+        padding: 0;
+    }
+
+    .job-card {
+        width: unset;
+        padding: 1.5rem;
+    }
+
+    
+}
+
+@media (min-width: 1280px) {
+    .section-3 {
+        width: calc(100vw - 10rem);
+        padding: 3.5rem 5rem;
+        gap: 2.625rem;
+    }
+}
+/* Section 3 */
