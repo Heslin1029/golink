@@ -7,7 +7,7 @@ main {
     align-items: center;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(/images/E-Invoice/hero.jpg);
+        url(../images/E-Invoice/hero.jpg);
     background-color: var(--black-40);
 }
 
