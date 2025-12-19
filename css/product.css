@@ -1065,7 +1065,7 @@
     align-items: center;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url(/images/Products/SQL-Account/customer-service.jpg);
+        url(../images/Products/SQL-Account/customer-service.jpg);
     background-size: cover;
     color: var(--white-100);
 }
