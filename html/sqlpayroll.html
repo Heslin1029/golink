@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/CSS/satoshi.css">
+    <link type="text/css" rel="stylesheet" href="/CSS/style.css">
+    <link type="text/css" rel="stylesheet" href="/CSS/product.css">
+    <title>GOLINK | SQL Payroll</title>
+</head>
+<body>
+    <nav class="nav-main">
+        <ul class="nav-main-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li id="products-dropdown"><a class="nav-dropdown">Products<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a></li>
+            <li><a href="einvoice.html">E-Invoice</a></li>
+            <li><a href="support.html">Support & Tutorial</a></li>
+        </ul>
+        <div class="nav-main-links-side">
+            <img onclick="window.location.href= 'index.html'" src="/images/logo/golink-logo-white.png" alt="GOLINK Logo. white">
+            <ul class="nav-toggles">
+                <button onclick="wndow.location.href= 'freedemo.html'" class="button-large button-primary-green-40">
+                    <div class="dots_border"></div>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        class="sparkle"
+                    >
+                        <path
+                        class="path"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                        stroke="var(--white-100)"
+                        fill="var(--white-100)"
+                        d="M14.187 8.096L15 5.25L15.813 8.096C16.0231 8.83114 16.4171 9.50062 16.9577 10.0413C17.4984 10.5819 18.1679 10.9759 18.903 11.186L21.75 12L18.904 12.813C18.1689 13.0231 17.4994 13.4171 16.9587 13.9577C16.4181 14.4984 16.0241 15.1679 15.814 15.903L15 18.75L14.187 15.904C13.9769 15.1689 13.5829 14.4994 13.0423 13.9587C12.5016 13.4181 11.8321 13.0241 11.097 12.814L8.25 12L11.096 11.187C11.8311 10.9769 12.5006 10.5829 13.0413 10.0423C13.5819 9.50162 13.9759 8.83214 14.186 8.097L14.187 8.096Z"
+                        ></path>
+                        <path
+                        class="path"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                        stroke="var(--white-100)"
+                        fill="var(--white-100)"
+                        d="M6 14.25L5.741 15.285C5.59267 15.8785 5.28579 16.4206 4.85319 16.8532C4.42059 17.2858 3.87853 17.5927 3.285 17.741L2.25 18L3.285 18.259C3.87853 18.4073 4.42059 18.7142 4.85319 19.1468C5.28579 19.5794 5.59267 20.1215 5.741 20.715L6 21.75L6.259 20.715C6.40725 20.1216 6.71398 19.5796 7.14639 19.147C7.5788 18.7144 8.12065 18.4075 8.714 18.259L9.75 18L8.714 17.741C8.12065 17.5925 7.5788 17.2856 7.14639 16.853C6.71398 16.4204 6.40725 15.8784 6.259 15.285L6 14.25Z"
+                        ></path>
+                        <path
+                        class="path"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                        stroke="var(--white-100)"
+                        fill="var(--white-100)"
+                        d="M6.5 4L6.303 4.5915C6.24777 4.75718 6.15472 4.90774 6.03123 5.03123C5.90774 5.15472 5.75718 5.24777 5.5915 5.303L5 5.5L5.5915 5.697C5.75718 5.75223 5.90774 5.84528 6.03123 5.96877C6.15472 6.09226 6.24777 6.24282 6.303 6.4085L6.5 7L6.697 6.4085C6.75223 6.24282 6.84528 6.09226 6.96877 5.96877C7.09226 5.84528 7.24282 5.75223 7.4085 5.697L8 5.5L7.4085 5.303C7.24282 5.24777 7.09226 5.15472 6.96877 5.03123C6.84528 4.90774 6.75223 4.75718 6.697 4.5915L6.5 4Z"
+                        ></path>
+                    </svg>
+                    <span class="text_button">Free Demo</span>
+                </button>
+            </ul>
+        </div>
+    </nav>
+    <nav class="nav-mobile">
+        <div>
+            <img src="/images/logo/golink-logo-white.png" alt="GOLINK Logo. white">
+            <div>
+                <button onclick="window.location.href= 'freedemo.html'" class="button-primary-green button-medium">Free Demo</button>
+                <svg id="nav-mobile-hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+            </div>
+        </div>
+    </nav>
+
+    <div id="nav-mobile-menu" class="nav-mobile-menu">
+        <div>
+            <svg id="nav-mobile-menu-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </div>
+        <div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="nav-mobile-menu-products-container">
+                    <a class="nav-mobile-menu-products-header">Products & Services<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a>
+                    <div class="nav-mobile-menu-products">
+                        <div class="nav-mobile-menu-product-top-sellers">
+                            <div onclick="window.location.href= 'sqlaccount.html'" class="product-top-sellers-cards">
+                                <img src="/images/Home/products/sql-account.png" alt="SQL Account software interface showing a hybrid cloud login screen for integrated business accounting and financial management.">
+                                <h3>SQL Account</h3>
+                            </div>
+                            <div onclick="window.location.href= 'sqlpayroll.html'" class="product-top-sellers-cards">
+                                <img src="/images/Home/products/sql-payroll.png" alt="SQL Payroll software dashboard featuring icons for employee management, payroll processing, and statutory reporting for HR compliance.">
+                                <h3>SQL Payroll</h3>
+                            </div>
+                            <div onclick="window.location.href= 'sqlpos.html'" class="product-top-sellers-cards">
+                                <img src="/images/Home/products/sql-pos.png" alt="SQL POS system touchscreen interface designed for retail and F&B business automation and point of sale inventory tracking.">
+                                <h3>SQL POS</h3>
+                            </div>
+                            <div onclick="window.location.href= 'sqlbidashboard.html'" class="product-top-sellers-cards">
+                                <img src="/images/Home/products/sql-bidashboard.png" alt="SQL BI Dashboard displaying real-time data analytics, sales performance charts, and business intelligence reporting for data-driven decisions.">
+                                <h3>SQL BI Dashboard</h3>
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="sqlacc-add-module.html">SQL Additional Module</a></li>
+                            <li><a href="einvoice.html">E-Invoice</a></li>
+                            <li><a href="foraccountant.html">For Accountant</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="einvoice.html">E-Invoice</a></li>
+                <li><a href="support.html">Support & Tutorial</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="mobile-menu-black-backdrop" class="mobile-menu-black-backdrop"></div>
+
+    <div class="product-drop-down" id="product-drop-down">
+        <div>
+            <h2 class="text-color-gradient-green">Our Products & Services</h2>
+            <div>
+                <ul>
+                    <li><a href="sqlacc-add-module.html">SQL Additional Module</a></li>
+                    <li><a href="einvoice.html">E-Invoice</a></li>
+                    <li><a href="foraccountant.html">For Accountant</a></li>
+                </ul>
+                <div class="product-top-sellers">
+                    <div onclick="window.location.href= 'sqlaccount.html'" class="product-top-sellers-cards">
+                        <img src="/images/Home/products/sql-account.png" alt="SQL Account software interface showing a hybrid cloud login screen for integrated business accounting and financial management.">
+
+                        <h3>SQL Account</h3>
+                    </div>
+                    <div onclick="window.location.href= 'sqlpayroll.html'" class="product-top-sellers-cards">
+                        <img src="/images/Home/products/sql-payroll.png" alt="SQL Payroll software dashboard featuring icons for employee management, payroll processing, and statutory reporting for HR compliance.">
+                        <h3>SQL Payroll</h3>
+                    </div>
+                    <div onclick="window.location.href= 'sqlpos.html'" class="product-top-sellers-cards">
+                        <img src="/images/Home/products/sql-pos.png" alt="SQL POS system touchscreen interface designed for retail and F&B business automation and point of sale inventory tracking.">
+                        <h3>SQL POS</h3>
+                    </div>
+                    <div onclick="window.location.href= 'sqlbidashboard.html'" class="product-top-sellers-cards">
+                        <img src="/images/Home/products/sql-bidashboard.png" alt="SQL BI Dashboard displaying real-time data analytics, sales performance charts, and business intelligence reporting for data-driven decisions.">
+                        <h3>SQL BI Dashboard</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="black-backdrop" class="black-backdrop"></div>
+    
+    <script src="/javascript/script.js"></script>
+
+    <main class="section-product-hero">
+        <div>
+            <h1 class="text-color-gradient-payroll">SQL Payroll</h1>
+            <div>
+                <h2 class="text-color-gradient-payroll">The most user friendly payroll system.</h2>
+                <p>SQL Payroll is designed to simplify and automate your payroll process. It handles automated payroll calculations with accuracy, ensures full compliance with statutory regulations, and makes payroll management faster, easier, and stress-free.</p>
+            </div>
+        </div>
+        <img src="/images/Products/SQL-Payroll/hero.png" alt="SQL Pay logo displayed on a 3D interface showcasing various payroll and HR management software modules.">
+    </main>
+
+    <section class="section-product-features">
+        <div class="product-features">
+            <div class="feature-icon-container feature-icon-container-payroll">
+                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M39.875 14.8723V9.625C39.875 8.89565 39.5853 8.19618 39.0695 7.68046C38.5538 7.16473 37.8543 6.875 37.125 6.875H6.875C6.14565 6.875 5.44618 7.16473 4.93046 7.68046C4.41473 8.19618 4.125 8.89565 4.125 9.625V31.625C4.125 32.3543 4.41473 33.0538 4.93046 33.5695C5.44618 34.0853 6.14565 34.375 6.875 34.375H27.5V38.5C27.4978 38.7424 27.5598 38.9811 27.6796 39.1918C27.7993 39.4026 27.9727 39.5779 28.1821 39.7001C28.3915 39.8222 28.6295 39.8868 28.8719 39.8874C29.1143 39.8879 29.3526 39.8243 29.5625 39.7031L33.6875 37.3416L37.8125 39.7031C38.0224 39.8243 38.2607 39.8879 38.5031 39.8874C38.7455 39.8868 38.9835 39.8222 39.1929 39.7001C39.4023 39.5779 39.5757 39.4026 39.6954 39.1918C39.8152 38.9811 39.8772 38.7424 39.875 38.5V27.7527C40.7442 26.9203 41.4359 25.9206 41.9085 24.8138C42.381 23.707 42.6246 22.516 42.6246 21.3125C42.6246 20.109 42.381 18.918 41.9085 17.8112C41.4359 16.7044 40.7442 15.7047 39.875 14.8723ZM22 24.75H12.375C12.0103 24.75 11.6606 24.6051 11.4027 24.3473C11.1449 24.0894 11 23.7397 11 23.375C11 23.0103 11.1449 22.6606 11.4027 22.4027C11.6606 22.1449 12.0103 22 12.375 22H22C22.3647 22 22.7144 22.1449 22.9723 22.4027C23.2301 22.6606 23.375 23.0103 23.375 23.375C23.375 23.7397 23.2301 24.0894 22.9723 24.3473C22.7144 24.6051 22.3647 24.75 22 24.75ZM22 19.25H12.375C12.0103 19.25 11.6606 19.1051 11.4027 18.8473C11.1449 18.5894 11 18.2397 11 17.875C11 17.5103 11.1449 17.1606 11.4027 16.9027C11.6606 16.6449 12.0103 16.5 12.375 16.5H22C22.3647 16.5 22.7144 16.6449 22.9723 16.9027C23.2301 17.1606 23.375 17.5103 23.375 17.875C23.375 18.2397 23.2301 18.5894 22.9723 18.8473C22.7144 19.1051 22.3647 19.25 22 19.25ZM37.125 36.1298L34.375 34.5555C34.1672 34.4367 33.932 34.3742 33.6927 34.3742C33.4533 34.3742 33.2181 34.4367 33.0103 34.5555L30.2603 36.1298V29.5625C31.3492 30.0175 32.5177 30.2517 33.6978 30.2517C34.878 30.2517 36.0464 30.0175 37.1353 29.5625L37.125 36.1298ZM33.6875 27.5C32.4637 27.5 31.2674 27.1371 30.2499 26.4572C29.2324 25.7773 28.4393 24.811 27.971 23.6804C27.5027 22.5497 27.3801 21.3056 27.6189 20.1054C27.8576 18.9051 28.4469 17.8026 29.3123 16.9373C30.1776 16.0719 31.2801 15.4826 32.4804 15.2439C33.6806 15.0051 34.9247 15.1277 36.0554 15.596C37.186 16.0643 38.1523 16.8574 38.8322 17.8749C39.5121 18.8924 39.875 20.0887 39.875 21.3125C39.875 22.1251 39.715 22.9297 39.404 23.6804C39.0931 24.4311 38.6373 25.1132 38.0627 25.6877C37.4882 26.2623 36.8061 26.7181 36.0554 27.029C35.3047 27.34 34.5001 27.5 33.6875 27.5Z" fill="url(#paint0_linear_332_2743)"/><path d="M39.875 14.8723V9.625C39.875 8.89565 39.5853 8.19618 39.0695 7.68046C38.5538 7.16473 37.8543 6.875 37.125 6.875H6.875C6.14565 6.875 5.44618 7.16473 4.93046 7.68046C4.41473 8.19618 4.125 8.89565 4.125 9.625V31.625C4.125 32.3543 4.41473 33.0538 4.93046 33.5695C5.44618 34.0853 6.14565 34.375 6.875 34.375H27.5V38.5C27.4978 38.7424 27.5598 38.9811 27.6796 39.1918C27.7993 39.4026 27.9727 39.5779 28.1821 39.7001C28.3915 39.8222 28.6295 39.8868 28.8719 39.8874C29.1143 39.8879 29.3526 39.8243 29.5625 39.7031L33.6875 37.3416L37.8125 39.7031C38.0224 39.8243 38.2607 39.8879 38.5031 39.8874C38.7455 39.8868 38.9835 39.8222 39.1929 39.7001C39.4023 39.5779 39.5757 39.4026 39.6954 39.1918C39.8152 38.9811 39.8772 38.7424 39.875 38.5V27.7527C40.7442 26.9203 41.4359 25.9206 41.9085 24.8138C42.381 23.707 42.6246 22.516 42.6246 21.3125C42.6246 20.109 42.381 18.918 41.9085 17.8112C41.4359 16.7044 40.7442 15.7047 39.875 14.8723ZM22 24.75H12.375C12.0103 24.75 11.6606 24.6051 11.4027 24.3473C11.1449 24.0894 11 23.7397 11 23.375C11 23.0103 11.1449 22.6606 11.4027 22.4027C11.6606 22.1449 12.0103 22 12.375 22H22C22.3647 22 22.7144 22.1449 22.9723 22.4027C23.2301 22.6606 23.375 23.0103 23.375 23.375C23.375 23.7397 23.2301 24.0894 22.9723 24.3473C22.7144 24.6051 22.3647 24.75 22 24.75ZM22 19.25H12.375C12.0103 19.25 11.6606 19.1051 11.4027 18.8473C11.1449 18.5894 11 18.2397 11 17.875C11 17.5103 11.1449 17.1606 11.4027 16.9027C11.6606 16.6449 12.0103 16.5 12.375 16.5H22C22.3647 16.5 22.7144 16.6449 22.9723 16.9027C23.2301 17.1606 23.375 17.5103 23.375 17.875C23.375 18.2397 23.2301 18.5894 22.9723 18.8473C22.7144 19.1051 22.3647 19.25 22 19.25ZM37.125 36.1298L34.375 34.5555C34.1672 34.4367 33.932 34.3742 33.6927 34.3742C33.4533 34.3742 33.2181 34.4367 33.0103 34.5555L30.2603 36.1298V29.5625C31.3492 30.0175 32.5177 30.2517 33.6978 30.2517C34.878 30.2517 36.0464 30.0175 37.1353 29.5625L37.125 36.1298ZM33.6875 27.5C32.4637 27.5 31.2674 27.1371 30.2499 26.4572C29.2324 25.7773 28.4393 24.811 27.971 23.6804C27.5027 22.5497 27.3801 21.3056 27.6189 20.1054C27.8576 18.9051 28.4469 17.8026 29.3123 16.9373C30.1776 16.0719 31.2801 15.4826 32.4804 15.2439C33.6806 15.0051 34.9247 15.1277 36.0554 15.596C37.186 16.0643 38.1523 16.8574 38.8322 17.8749C39.5121 18.8924 39.875 20.0887 39.875 21.3125C39.875 22.1251 39.715 22.9297 39.404 23.6804C39.0931 24.4311 38.6373 25.1132 38.0627 25.6877C37.4882 26.2623 36.8061 26.7181 36.0554 27.029C35.3047 27.34 34.5001 27.5 33.6875 27.5Z" fill="url(#paint1_linear_332_2743)"/><defs><linearGradient id="paint0_linear_332_2743" x1="4.125" y1="23.3812" x2="42.6246" y2="23.3812" gradientUnits="userSpaceOnUse"><stop stop-color="#3A6FD3"/><stop offset="1" stop-color="#7739C5"/></linearGradient><linearGradient id="paint1_linear_332_2743" x1="42.6246" y1="23.3812" x2="4.125" y2="23.3812" gradientUnits="userSpaceOnUse"><stop stop-color="#FFCB7C"/><stop offset="1" stop-color="#F92C50"/></linearGradient></defs></svg>
+            </div>
+            <div>
+                <div class="product-features-title">
+                    <h4>Certified by Statutory Bodies & 100% Accurate</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                </div>
+               <p>Our software is 100% compliant with all Malaysian statutory bodies, including KWSP, SOCSO, EIS, LHDN, and HRDF.</p>
+            </div>
+            <p class="product-features-para_m">Our software is 100% compliant with all Malaysian statutory bodies, including KWSP, SOCSO, EIS, LHDN, and HRDF.</p>
+        </div>
+        <div class="product-features">
+            <div class="feature-icon-container feature-icon-container-payroll">
+                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 4.125C18.4647 4.125 15.0087 5.17335 12.0692 7.13748C9.12966 9.10161 6.83858 11.8933 5.48566 15.1595C4.13274 18.4258 3.77876 22.0198 4.46847 25.4872C5.15818 28.9547 6.86061 32.1397 9.36047 34.6395C11.8603 37.1394 15.0454 38.8418 18.5128 39.5315C21.9802 40.2212 25.5742 39.8673 28.8405 38.5143C32.1067 37.1614 34.8984 34.8703 36.8625 31.9308C38.8267 28.9913 39.875 25.5353 39.875 22C39.87 17.2608 37.9851 12.7171 34.634 9.36599C31.2829 6.01487 26.7392 4.13 22 4.125ZM29.8478 18.8478L20.2228 28.4728C20.0951 28.6007 19.9435 28.7021 19.7766 28.7713C19.6096 28.8405 19.4307 28.8761 19.25 28.8761C19.0693 28.8761 18.8904 28.8405 18.7235 28.7713C18.5565 28.7021 18.4049 28.6007 18.2772 28.4728L14.1522 24.3478C13.8942 24.0898 13.7492 23.7399 13.7492 23.375C13.7492 23.0101 13.8942 22.6602 14.1522 22.4022C14.4102 22.1442 14.7601 21.9992 15.125 21.9992C15.4899 21.9992 15.8398 22.1442 16.0978 22.4022L19.25 25.5561L27.9022 16.9022C28.0299 16.7744 28.1816 16.6731 28.3485 16.604C28.5154 16.5348 28.6943 16.4992 28.875 16.4992C29.0557 16.4992 29.2346 16.5348 29.4015 16.604C29.5684 16.6731 29.7201 16.7744 29.8478 16.9022C29.9756 17.0299 30.0769 17.1816 30.146 17.3485C30.2152 17.5154 30.2508 17.6943 30.2508 17.875C30.2508 18.0557 30.2152 18.2346 30.146 18.4015C30.0769 18.5684 29.9756 18.7201 29.8478 18.8478Z" fill="url(#paint0_linear_332_2771)"/><defs><linearGradient id="paint0_linear_332_2771" x1="39.875" y1="22" x2="4.125" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#FFCB7C"/><stop offset="1" stop-color="#F92C50"/></linearGradient></defs></svg>
+            </div>
+            <div>
+                <div class="product-features-title">
+                    <h4>Electronic Submission & E Payment Ready</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                </div>
+               <p>Easily perform bank GIRO transactions, as SQL Payroll integrates with over 25 Malaysian banks.</p>
+            </div>
+            <p class="product-features-para_m">Easily perform bank GIRO transactions, as SQL Payroll integrates with over 25 Malaysian banks.</p>
+        </div>
+        <div class="product-features">
+            <div class="feature-icon-container feature-icon-container-payroll">
+                <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.1875 1.375C29.8285 1.375 31.4021 2.02712 32.5625 3.1875C33.7229 4.34788 34.375 5.92147 34.375 7.5625V36.4375C34.375 38.0785 33.7229 39.6521 32.5625 40.8125C31.4021 41.9729 29.8285 42.625 28.1875 42.625H15.8125C14.1715 42.625 12.5979 41.9729 11.4375 40.8125C10.2771 39.6521 9.625 38.0785 9.625 36.4375V7.5625C9.625 5.92147 10.2771 4.34788 11.4375 3.1875C12.5979 2.02712 14.1715 1.375 15.8125 1.375H28.1875ZM15.8125 5.5C14.674 5.5 13.75 6.424 13.75 7.5625V36.4375C13.75 36.9845 13.9677 37.5087 14.3545 37.8955C14.7413 38.2823 15.2655 38.5 15.8125 38.5H28.1875C29.326 38.5 30.25 37.576 30.25 36.4375V7.5625C30.25 6.424 29.326 5.5 28.1875 5.5H26.125V6.1875C26.125 7.326 25.201 8.25 24.0625 8.25H19.9375C18.799 8.25 17.875 7.326 17.875 6.1875V5.5H15.8125ZM24.75 34.375C25.1147 34.375 25.4648 34.5195 25.7227 34.7773C25.9805 35.0352 26.125 35.3853 26.125 35.75C26.125 36.1147 25.9805 36.4648 25.7227 36.7227C25.4648 36.9805 25.1147 37.125 24.75 37.125H19.25C18.8853 37.125 18.5352 36.9805 18.2773 36.7227C18.0195 36.4648 17.875 36.1147 17.875 35.75C17.875 35.3853 18.0195 35.0352 18.2773 34.7773C18.5352 34.5195 18.8853 34.375 19.25 34.375H24.75Z" fill="url(#paint0_linear_332_2785)"/><defs><linearGradient id="paint0_linear_332_2785" x1="34.375" y1="22" x2="9.625" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#FFCB7C"/><stop offset="1" stop-color="#F92C50"/></linearGradient></defs></svg>
+            </div>
+            <div>
+                <div class="product-features-title">
+                    <h4>HRMS Mobile App</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                </div>
+               <p>Manage your workforce on the go with dedicated dashboards for both employees and managers.</p>
+            </div>
+            <p class="product-features-para_m">Manage your workforce on the go with dedicated dashboards for both employees and managers.</p>
+        </div>
+        <div class="product-features">
+            <div class="feature-icon-container feature-icon-container-payroll">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M36.7228 11.4022L29.8478 4.52719C29.72 4.39954 29.5683 4.29832 29.4014 4.22931C29.2345 4.1603 29.0556 4.12486 28.875 4.125H15.125C14.3957 4.125 13.6962 4.41473 13.1805 4.93046C12.6647 5.44618 12.375 6.14565 12.375 6.875V9.625H9.625C8.89565 9.625 8.19618 9.91473 7.68046 10.4305C7.16473 10.9462 6.875 11.6457 6.875 12.375V37.125C6.875 37.8543 7.16473 38.5538 7.68046 39.0695C8.19618 39.5853 8.89565 39.875 9.625 39.875H28.875C29.6043 39.875 30.3038 39.5853 30.8195 39.0695C31.3353 38.5538 31.625 37.8543 31.625 37.125V34.375H34.375C35.1043 34.375 35.8038 34.0853 36.3195 33.5695C36.8353 33.0538 37.125 32.3543 37.125 31.625V12.375C37.1251 12.1944 37.0897 12.0155 37.0207 11.8486C36.9517 11.6817 36.8505 11.53 36.7228 11.4022ZM23.375 33H15.125C14.7603 33 14.4106 32.8551 14.1527 32.5973C13.8949 32.3394 13.75 31.9897 13.75 31.625C13.75 31.2603 13.8949 30.9106 14.1527 30.6527C14.4106 30.3949 14.7603 30.25 15.125 30.25H23.375C23.7397 30.25 24.0894 30.3949 24.3473 30.6527C24.6051 30.9106 24.75 31.2603 24.75 31.625C24.75 31.9897 24.6051 32.3394 24.3473 32.5973C24.0894 32.8551 23.7397 33 23.375 33ZM23.375 27.5H15.125C14.7603 27.5 14.4106 27.3551 14.1527 27.0973C13.8949 26.8394 13.75 26.4897 13.75 26.125C13.75 25.7603 13.8949 25.4106 14.1527 25.1527C14.4106 24.8949 14.7603 24.75 15.125 24.75H23.375C23.7397 24.75 24.0894 24.8949 24.3473 25.1527C24.6051 25.4106 24.75 25.7603 24.75 26.125C24.75 26.4897 24.6051 26.8394 24.3473 27.0973C24.0894 27.3551 23.7397 27.5 23.375 27.5ZM34.375 31.625H31.625V17.875C31.6251 17.6944 31.5897 17.5155 31.5207 17.3486C31.4517 17.1817 31.3505 17.03 31.2228 16.9022L24.3478 10.0272C24.22 9.89954 24.0683 9.79832 23.9014 9.72931C23.7345 9.6603 23.5556 9.62486 23.375 9.625H15.125V6.875H28.3061L34.375 12.9439V31.625Z" fill="url(#paint0_linear_332_2755)"/><defs><linearGradient id="paint0_linear_332_2755" x1="37.125" y1="22" x2="6.875" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#FFCB7C"/><stop offset="1" stop-color="#F92C50"/></linearGradient></defs></svg>
+            </div>
+            <div>
+                <div class="product-features-title">
+                    <h4>Comprehensive HR Reports</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                </div>
+               <p>Instantly generate all essential HR documents with ready-to-use formats, from appointment letters to termination letters.</p>
+            </div>
+            <p class="product-features-para_m">Instantly generate all essential HR documents with ready-to-use formats, from appointment letters to termination letters.</p>
+        </div>
+    </section>
+
+    <section class="section-core-module">
+        <h1 class="text-color-gradient-payroll">SQL Payroll Core Module</h1>
+        <div>
+            <div class="section-core-module-slider-container">
+                <div class="section-core-module-slider">
+                    <div>
+                        <div class="section-core-module-content">
+                            <h2>Print/Email Payslip</h2>
+                            <p>Securely send the payslips to every single employee's registered email with password encryption similar your bank statement.</p>
+                        </div>
+                        <div class="section-core-module-img-container section-core-module-img-container-payroll">
+                            <div>
+                                <img src="/images/Products/SQL-Payroll/Core-Module/p-email.jpg" alt="Image of a person calculating on a mobile phone and a pen with book instead of using a sql accounting software.">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="section-core-module-content">
+                            <h2>Payroll Report</h2>
+                            <p>Generate the monthly payroll report by department, staff category, branch and up to 9 levels of different grouping manageable from SQL Payroll.</p>
+                        </div>
+                        <div class="section-core-module-img-container section-core-module-img-container-payroll">
+                            <div>
+                                <img src="/images/Products/SQL-Payroll/Core-Module/p-payrollreport.jpg" alt="Image of a person calculating on a mobile phone and a pen with book instead of using a sql accounting software.">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="section-core-module-content">
+                            <h2>EIS / SIP</h2>
+                            <p>Employment Insurance System will automatic calculate based on EIS table also will auto detect when employee reach the requirement of contribution.</p>
+                        </div>
+                        <div class="section-core-module-img-container section-core-module-img-container-payroll">
+                            <div>
+                                <img src="/images/Products/SQL-Payroll/Core-Module/p-eis.jpg" alt="Image of a person calculating on a mobile phone and a pen with book instead of using a sql accounting software.">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="section-core-module-content">
+                            <h2>SOCSO / Employment Injury Scheme</h2>
+                            <p>No matter for local employees (SOCSO) or foreign employees (Employment Injury Scheme) SQL Payroll will always stay up-to-date for you.</p>
+                        </div>
+                        <div class="section-core-module-img-container section-core-module-img-container-payroll">
+                            <div>
+                                <img src="/images/Products/SQL-Payroll/Core-Module/p-injury.jpg" alt="Image of a person calculating on a mobile phone and a pen with book instead of using a sql accounting software.">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="section-core-module-content">
+                            <h2>EPF / KWSP</h2>
+                            <p>The contribution rate by default is set to the standard auto EPF rate or it can be set to user-defined EPF rate. The system will intelligently detect the rate to apply based on the employee's age/wages.</p>
+                        </div>
+                        <div class="section-core-module-img-container section-core-module-img-container-payroll">
+                            <div>
+                                <img src="/images/Products/SQL-Payroll/Core-Module/p-kwsp.jpg" alt="Image of a person calculating on a mobile phone and a pen with book instead of using a sql accounting software.">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="section-core-module-content">
+                            <h2>CP39 / LHDN</h2>
+                            <p>Monthly tax deduction for the employee is compulsory if he/she meets a certain requirement. Our system will handle this task along with CP38.</p>
+                        </div>
+                        <div class="section-core-module-img-container section-core-module-img-container-payroll">
+                            <div>
+                                <img src="/images/Products/SQL-Payroll/Core-Module/p-lhdn.jpg" alt="Image of a person calculating on a mobile phone and a pen with book instead of using a sql accounting software.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="section-core-module-timeline" id="core-module-active">
+                        <div>
+                            <div class="core-module-radio"></div>
+                            <div class="core-module-line"></div>
+                        </div>
+                        <p>Print/Email Payslip</p>
+                    </div>
+                    <div class="section-core-module-timeline">
+                        <div>
+                            <div class="core-module-radio"></div>
+                            <div class="core-module-line"></div>
+                        </div>
+                        <p>Payroll Report</p>
+                    </div>
+                    <div class="section-core-module-timeline">
+                        <div>
+                            <div class="core-module-radio"></div>
+                            <div class="core-module-line"></div>
+                        </div>
+                        <p>EIS / SIP</p>
+                    </div>
+                    <div class="section-core-module-timeline">
+                        <div>
+                            <div class="core-module-radio"></div>
+                            <div class="core-module-line"></div>
+                        </div>
+                        <p>SOCSO / Employment Injury Scheme</p>
+                    </div>
+                    <div class="section-core-module-timeline">
+                        <div>
+                            <div class="core-module-radio"></div>
+                            <div class="core-module-line"></div>
+                        </div>
+                        <p>EPF / KWSP</p>
+                    </div>
+                    <div class="section-core-module-timeline">
+                        <div>
+                            <div class="core-module-radio"></div>
+                            <div class="core-module-line"></div>
+                        </div>
+                        <p>CP39 / LHDN</p>
+                    </div>
+                </div>
+                <div class="core-module-button-container">
+                    <button id="core-module-button-prev" class="button-medium button-primary-green-40"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg></button>
+                    <button id="core-module-button-next" class="button-medium button-primary-green-40"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-certified">
+        <div>
+            <h1 class="text-color-gradient-payroll">Certified by Statutory Bodies</h1>
+            <p>Compliance with KWSP, SOCSO, EIS, LHDN and HRDF, with statutory reporting.</p>
+        </div>
+        <div class="certified-by-container">
+            <div>
+                <img src="/images/Products/SQL-Payroll/Statutary-Bodies/lhdn.png" alt="LHDN Malaysia logo for Inland Revenue Board tax compliance.">
+            </div>
+            <div>
+                <img src="/images/Products/SQL-Payroll/Statutary-Bodies/kwsp.png" alt="KWSP logo for Employees Provident Fund (EPF) contributions.">
+            </div>
+            <div>
+                <img src="/images/Products/SQL-Payroll/Statutary-Bodies/perkeso.png" alt="PERKESO (SOCSO) logo for social security and disability schemes.">
+            </div>
+            <div>
+                <img src="/images/Products/SQL-Payroll/Statutary-Bodies/HRD.png" alt="HRD Corp (formerly HRDF) logo for human resource development levy.">
+            </div>
+            <div>
+                <img src="/images/Products/SQL-Payroll/Statutary-Bodies/eis.png" alt="EIS (SIP) logo representing the Employment Insurance System.">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-feature-with-img">
+        <div>
+            <div class="section-feature-title">
+                <h2>Mobile App For Employee</h2>
+                <p>SQL E Leave app integrates with SQL Payroll, enabling leave applications, payslip and tax checks, plus manager-employee dashboard approvals.</p>
+            </div>
+            <div class="section-feature-content">
+                <div><svg viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 26.0836V5.08358C7 4.46474 7.24583 3.87125 7.68342 3.43366C8.121 2.99608 8.71449 2.75024 9.33333 2.75024H18.6667C19.2855 2.75024 19.879 2.99608 20.3166 3.43366C20.7542 3.87125 21 4.46474 21 5.08358V26.0836H7Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.99992 14.4169H4.66659C4.04775 14.4169 3.45425 14.6628 3.01667 15.1003C2.57908 15.5379 2.33325 16.1314 2.33325 16.7503V23.7503C2.33325 24.3691 2.57908 24.9626 3.01667 25.4002C3.45425 25.8378 4.04775 26.0836 4.66659 26.0836H6.99992" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 10.9169H23.3333C23.9522 10.9169 24.5457 11.1628 24.9832 11.6003C25.4208 12.0379 25.6667 12.6314 25.6667 13.2503V23.7503C25.6667 24.3691 25.4208 24.9626 24.9832 25.4002C24.5457 25.8378 23.9522 26.0836 23.3333 26.0836H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.6667 7.41693H16.3334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.6667 12.0836H16.3334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.6667 16.7502H16.3334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.6667 21.4169H16.3334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>E-TMS</div>
+                <div><svg viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.3817 22.7571C17.3817 22.7571 17.5021 15.8228 10.2082 15.8228C2.91443 15.8228 3.03479 22.7571 3.03479 22.7571M16.4585 6.37299C16.8855 6.18284 17.3583 6.07715 17.8558 6.07715C19.7547 6.07715 21.294 7.61644 21.294 9.51526C21.294 11.4141 19.7547 12.9534 17.8558 12.9534C17.3603 12.9534 16.8893 12.8485 16.4638 12.6599M18.425 15.8409C25.0785 16.2303 24.9652 22.7571 24.9652 22.7571M13.7104 9.5153C13.7104 11.4141 12.1711 12.9534 10.2723 12.9534C8.37347 12.9534 6.83418 11.4141 6.83418 9.5153C6.83418 7.6165 8.37347 6.0772 10.2723 6.0772C12.1711 6.0772 13.7104 7.6165 13.7104 9.5153Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>E-Leave</div>
+                <div><svg viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.4889 4.22728C13.5393 4.13582 13.6133 4.05955 13.7031 4.00643C13.793 3.95331 13.8955 3.92529 13.9999 3.92529C14.1043 3.92529 14.2068 3.95331 14.2967 4.00643C14.3866 4.05955 14.4606 4.13582 14.5109 4.22728L17.9549 10.7653C18.0371 10.9167 18.1517 11.048 18.2906 11.1498C18.4295 11.2517 18.5892 11.3215 18.7583 11.3543C18.9274 11.3871 19.1016 11.382 19.2685 11.3395C19.4354 11.297 19.5908 11.218 19.7236 11.1083L24.7134 6.83361C24.8092 6.7557 24.9272 6.7102 25.0505 6.70365C25.1738 6.69709 25.296 6.72983 25.3995 6.79715C25.503 6.86447 25.5825 6.96289 25.6265 7.07825C25.6705 7.19361 25.6768 7.31996 25.6444 7.43911L22.3381 19.3928C22.2706 19.6374 22.1252 19.8533 21.9239 20.0079C21.7227 20.1624 21.4765 20.2471 21.2228 20.2491H6.77826C6.52432 20.2473 6.27789 20.1628 6.07638 20.0082C5.87488 19.8537 5.7293 19.6376 5.66176 19.3928L2.35659 7.44028C2.32422 7.32113 2.33048 7.19478 2.37449 7.07942C2.4185 6.96406 2.49797 6.86563 2.60148 6.79832C2.70498 6.731 2.82718 6.69826 2.95047 6.70481C3.07377 6.71136 3.1918 6.75687 3.28759 6.83478L8.27626 11.1094C8.40902 11.2192 8.56443 11.2981 8.73133 11.3407C8.89823 11.3832 9.07248 11.3882 9.24156 11.3554C9.41064 11.3227 9.57037 11.2528 9.70927 11.151C9.84817 11.0492 9.9628 10.9178 10.0449 10.7664L13.4889 4.22728Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.83325 24.917H22.1666" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>E-Claim</div>
+                <div><svg viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.3334 12.0837C23.3334 17.9089 16.8712 23.9755 14.7012 25.8492C14.4991 26.0012 14.253 26.0834 14.0001 26.0834C13.7472 26.0834 13.5011 26.0012 13.2989 25.8492C11.1289 23.9755 4.66675 17.9089 4.66675 12.0837C4.66675 9.60835 5.65008 7.23438 7.40042 5.48404C9.15076 3.7337 11.5247 2.75037 14.0001 2.75037C16.4754 2.75037 18.8494 3.7337 20.5997 5.48404C22.3501 7.23438 23.3334 9.60835 23.3334 12.0837Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 15.5836C15.933 15.5836 17.5 14.0166 17.5 12.0836C17.5 10.1506 15.933 8.58362 14 8.58362C12.067 8.58362 10.5 10.1506 10.5 12.0836C10.5 14.0166 12.067 15.5836 14 15.5836Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>E-Payslip/EA</div>
+            </div>
+        </div>
+        <img src="/images/Products/SQL-Payroll/app-for-employee.png" alt="">
+    </section>
+
+
+    <section class="section-product-pricing section-product-pricing-payroll">
+        <div class="section-product-pricing-header">
+            <h1 class="text-color-gradient-payroll">SQL Payroll Pricing</h1>
+            <p>All plans come with identical features. Choose a plan from the payroll software Malaysia that matches your business size.</p>
+        </div>
+        <div>
+            <div class="pricing-containers-parent-wrap">
+                <div class="pricing-containers-parent">
+                    <div class="pricing-containers">
+                        <div class="pricing-header">
+                            <div class="pricing-header-category">
+                                <p>20 Active Staffs</p>
+                                <h3 class="text-color-gradient-payroll">Payroll 20S</h3>
+                            </div>
+                            <div class="pricing-header-price">
+                                <h1 class="text-color-gradient-payroll"><span>RM</span>1,299</h1>
+                                <p>Exclusive SST 8%</p>
+                            </div>
+                        </div>
+                        <button onclick="window.open('https://wa.me/60109205819', '_blank')" class="button-medium button-black">Enquiry Now<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 19L16 12L9 5" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <div class="divider-line"></div>
+                        <a class="pricing-container-view-more">
+                            <p>View features & details</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                        </a>
+                        <div class="pricing-container-details">
+                            <h4>Features</h4>
+                            <div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>20 Active Staffs</p>
+                                </div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>Interbank GIRO</p>
+                                </div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>Link SQL Account</p>
+                                </div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>Leave Module</p>
+                                </div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>KWSP/SOCSO/EIS/CP39/HRDF</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-made-for">
+                            <h4>Made for</h4>
+                            <div>
+                                <p>1 Company</p>
+                                <p>1 Concurrent User</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-containers">
+                        <div class="pricing-header">
+                            <div class="pricing-header-category">
+                                <p>50 Active Staffs</p>
+                                <h3 class="text-color-gradient-payroll">Payroll 50S</h3>
+                            </div>
+                            <div class="pricing-header-price">
+                                <h1 class="text-color-gradient-payroll"><span>RM</span>1,699</h1>
+                                <p>Exclusive SST 8%</p>
+                            </div>
+                        </div>
+                        <button onclick="window.open('https://wa.me/60109205819', '_blank')" class="button-medium button-black">Enquiry Now<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 19L16 12L9 5" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <div class="divider-line"></div>
+                        <a class="pricing-container-view-more">
+                            <p>View features & details</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                        </a>
+                        <div class="pricing-container-details">
+                            <h4>Features</h4>
+                            <div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>50 Active Staffs</p>
+                                </div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>Interbank GIRO</p>
+                                </div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>Link SQL Account</p>
+                                </div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>Leave Module</p>
+                                </div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>KWSP/SOCSO/EIS/CP39/HRDF</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-made-for">
+                            <h4>Made for</h4>
+                            <div>
+                                <p>1 Company</p>
+                                <p>1 Concurrent User</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-containers">
+                        <div class="pricing-header">
+                            <div class="pricing-header-category">
+                                <p>100 Active Staffs</p>
+                                <h3 class="text-color-gradient-payroll">Payroll 100S</h3>
+                            </div>
+                            <div class="pricing-header-price">
+                                <h1 class="text-color-gradient-payroll"><span>RM</span>1,999</h1>
+                                <p>Exclusive SST 8%</p>
+                            </div>
+                        </div>
+                        <button onclick="window.open('https://wa.me/60109205819', '_blank')" class="button-medium button-black">Enquiry Now<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 19L16 12L9 5" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <div class="divider-line"></div>
+                        <a class="pricing-container-view-more">
+                            <p>View features & details</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                        </a>
+                        <div class="pricing-container-details">
+                            <h4>Features</h4>
+                            <div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>100 Active Staffs</p>
+                                </div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>Interbank GIRO</p>
+                                </div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>Link SQL Account</p>
+                                </div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>Leave Module</p>
+                                </div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>KWSP/SOCSO/EIS/CP39/HRDF</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-made-for">
+                            <h4>Made for</h4>
+                            <div>
+                                <p>1 Company</p>
+                                <p>1 Concurrent User</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-containers">
+                        <div class="pricing-header">
+                            <div class="pricing-header-category">
+                                <p>Unlimited Staffs</p>
+                                <h3 class="text-color-gradient-payroll">HRMS App</h3>
+                            </div>
+                            <div class="pricing-header-price">
+                                <h1 class="text-color-gradient-payroll">FREE</h1>
+                                <p>Exclusive SST 8%</p>
+                            </div>
+                        </div>
+                        <button onclick="window.open('https://wa.me/60109205819', '_blank')" class="button-medium button-black">Enquiry Now<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 19L16 12L9 5" stroke="#F9F9F9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        <div class="divider-line"></div>
+                        <a class="pricing-container-view-more">
+                            <p>View features & details</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+                        </a>
+                        <div class="pricing-container-details">
+                            <h4>Features</h4>
+                            <div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>Mobile Leave Application</p>
+                                </div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>Mobile Claim Submission</p>
+                                </div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>E-Payslip & EA Form</p>
+                                </div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>Income Tax Calculator</p>
+                                </div>
+                                <div class="pricing-container-details-pointers">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM13.5312 8.53125L9.53125 12.5312C9.2375 12.825 8.7625 12.825 8.47188 12.5312L6.47188 10.5312C6.17813 10.2375 6.17813 9.7625 6.47188 9.47188C6.76562 9.18125 7.24062 9.17813 7.53125 9.47188L9 10.9406L12.4688 7.46875C12.7625 7.175 13.2375 7.175 13.5281 7.46875C13.8187 7.7625 13.8219 8.2375 13.5281 8.52812L13.5312 8.53125Z" fill="#345164"/></svg>
+                                    <p>Employee/Manager View</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-made-for">
+                            <h4>Made for</h4>
+                            <div>
+                                <p>1 Company</p>
+                                <p>1 Concurrent User</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-similarity">
+                    <h4>All plans include:</h4>
+                    <ul>
+                        <li><p>1 Session Training</p></li>
+                        <li><p>1st Year Support & Maintenance (Off-site)</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/javascript/product.js"></script>
+
+    <footer>
+        <div>
+            <div>
+                <div>
+                    <img src="/images/logo/golink-logo-white.png" alt="GOLINK Logo. white">
+                    <p>At Golink, we're your reliable partner for SQL Accounting Software. We provide comprehensive sales, smooth setup, and dedicated tech support. We're here to help your business succeed, right from the start and long-term.</p>
+                </div>
+                <div class="footer-links-main-container">
+                    <div class="footer-links-container">
+                        <div>
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="/html/index.html">Home</a></li>
+                                <li><a href="/html/about.html">About Us</a></li>
+                                <li><a href="/html/contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Channel Partners</h4>
+                            <ul>
+                                <li><a target="_blank" href="https://gopos.my/">GOPOS ® Malaysia</a></li>
+                                <li><a target="_blank" href="https://iseller.my/">iSeller ® POS Malaysia</a></li>
+                                <li><a target="_blank" href="https://www.ebisoftwares.com.my/">SQL EBI Wellness POS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-links-container">
+                        <div>
+                            <h4>Products</h4>
+                            <ul>
+                                <li><a href="/html/sqlaccount.html">SQL Account</a></li>
+                                <li><a href="/html/sqlacc-add-module.html">SQL Account<br>Additional Module</a></li>
+                                <li><a href="/html/sqlpayroll.html">SQL Payroll</a></li>
+                                <li><a href="/html/sqlpos.html">SQL POS</a></li>
+                                <li><a href="/html/sqlbidashboard.html">SQL BI Dashboard</a></li>
+                                <li><a href="/html/einvoice.html">E-Invoice</a></li>
+                                <li><a href="/html/foraccountant.html">For Accountant</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-contact">
+                            <h4>Contact</h4>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="">info@golink.com.my</a>
+                            </div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <div>
+                                    <h5>Selangor / Kuala Lumpur</h5>
+                                    <a target="_blank" href="https://wa.me/60109205819">+60 10 920 5819</a>
+                                </div>
+                                <div>
+                                    <h5>Sabah</h5>
+                                    <a target="_blank" href="https://wa.me/601134560033">+60 11 3456 0033</a>
+                                </div>
+                                <div>
+                                    <h5>Selangor / Kuala Lumpur</h5>
+                                    <a target="_blank" href="https://wa.me/60128951619">+60 12 895 1619</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-container">
+                <p>Copyright © 2025 Data Empowerment Sdn Bhd 201701038871 (1253042-T)</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
