@@ -7,7 +7,7 @@ main {
     align-items: center;
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(/images/Products/For-Accountant/hero.jpg);
+        url(../images/Products/For-Accountant/hero.jpg);
     background-color: var(--black-40);
     background-size: cover;
 }
