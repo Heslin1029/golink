@@ -1046,6 +1046,7 @@ footer h5 {
 #back-to-top-button {
 	bottom: 2rem;
 	right: 1.25rem;
+	position: fixed;
 }
 
 
