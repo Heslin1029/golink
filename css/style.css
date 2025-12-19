@@ -1043,6 +1043,11 @@ footer h5 {
     gap: 0.1875rem;
 }
 
+#back-to-top-button {
+	bottom: 2rem;
+	right: 1.25rem;
+}
+
 
 @media (min-width: 768px) {
     footer {
@@ -1076,6 +1081,11 @@ footer h5 {
     .footer-links-container {
         gap: 1.5rem;
     }
+	
+	#back-to-top-button {
+		bottom: 2rem;
+		right: 2.625rem;
+	}
 }
 
 @media (min-width: 1280px) {
@@ -1134,5 +1144,10 @@ footer h5 {
     footer > div > div > div > div > div * {
         text-wrap: nowrap;
     }
+
+	#back-to-top-button {
+		bottom: 3rem;
+		right: 4rem;
+	}
 }
 /* footer */
