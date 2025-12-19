@@ -504,11 +504,14 @@
     padding: 2.5rem 1.25rem;
     display: grid;
     gap: 1.5rem;
-    justify-content: center;
 }
 
 .section-additional-module > h1 {
     text-align: center;
+}
+
+.section-additional-module button {
+    justify-self: center;
 }
 
 .additional-module-container {
