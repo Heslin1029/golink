@@ -80,4 +80,13 @@ document.querySelectorAll('.pricing-container-view-more').forEach(item => {
             moveSlider(currentIndex - 1);
         }
     });
+
+
+    const productFeatures = document.querySelectorAll('.product-features');
+
+productFeatures.forEach(feature => {
+    feature.addEventListener('click', function() {
+        this.classList.toggle('product-features-active');
+    });
+});
 });
