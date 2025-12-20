@@ -86,8 +86,8 @@ const productFeatures = document.querySelectorAll('.product-features');
 
     productFeatures.forEach(feature => {
         feature.addEventListener('click', function() {
-            console.log('Clicked!'); // Debugging line
-            this.classList.toggle('product-features-active');
+            console.log('Clicked!');
+            this.classList.add('product-features-active');
         });
     });
 });
