@@ -112,6 +112,10 @@
     align-items: center;
 }
 
+.product-features-active {
+    max-height: calc(2.625rem + 3px + 3px);
+}
+
 .product-features-title {
     display: flex;
     justify-content: space-between;
