@@ -159,6 +159,10 @@ p {
     font-family: 'Satoshi-Regular';
 }
 
+body {
+	overflow-x: hidden;
+}
+
 
 @media (min-width: 768px) {
     h1 {
