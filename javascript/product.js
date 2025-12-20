@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Clicked!'); // Debugging line
             this.classList.toggle('product-features-active');
         });
-    });
 });
 
 document.querySelectorAll('.pricing-container-view-more').forEach(item => {
@@ -91,4 +90,6 @@ document.querySelectorAll('.pricing-container-view-more').forEach(item => {
             moveSlider(currentIndex - 1);
         }
     });
+    });
+    
 
