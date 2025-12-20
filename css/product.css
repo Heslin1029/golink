@@ -111,11 +111,11 @@
     gap: 1rem;
     align-items: center;
     overflow: hidden;
-    max-height: 0rem;
+    max-height: calc(2.625rem + 3px + 3px);
 }
 
 .product-features-active {
-    max-height: calc(2.625rem + 3px + 3px);
+    max-height: 100rem;
 }
 
 .product-features-title {
