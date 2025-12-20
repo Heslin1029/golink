@@ -1,3 +1,14 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const productFeatures = document.querySelectorAll('.product-features');
+
+    productFeatures.forEach(feature => {
+        feature.addEventListener('click', function() {
+            console.log('Clicked!'); // Debugging line
+            this.classList.toggle('product-features-active');
+        });
+    });
+});
+
 document.querySelectorAll('.pricing-container-view-more').forEach(item => {
     item.addEventListener('click', () => {
         // 1. Get all elements with that class
@@ -81,13 +92,3 @@ document.querySelectorAll('.pricing-container-view-more').forEach(item => {
         }
     });
 
-
-const productFeatures = document.querySelectorAll('.product-features');
-
-    productFeatures.forEach(feature => {
-        feature.addEventListener('click', function() {
-            console.log('Clicked!');
-            this.classList.add('product-features-active');
-        });
-    });
-});
