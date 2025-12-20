@@ -197,6 +197,7 @@
         display: grid;
         gap: 1rem;
         grid-template-columns: unset;
+        max-height: unset;
     }
 
     .feature-icon-container {
