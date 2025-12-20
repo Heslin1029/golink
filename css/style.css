@@ -523,7 +523,7 @@ main, section, footer {
     background-color: var(--bg-color);
     position: fixed;
     z-index: 10000;
-    transform: translateY(4.5rem);
+    transform: translateY(5.25rem);
     justify-content: center;
     display: flex;
     opacity: 0;
