@@ -110,6 +110,7 @@
     grid-template-columns: calc(2.625rem + 3px + 3px) 1fr;
     gap: 1rem;
     align-items: center;
+    overflow: hidden;
 }
 
 .product-features-active {
