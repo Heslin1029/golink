@@ -353,7 +353,8 @@ main > div > div > * {
     .section-3 > div {
         width: calc(100% - 2.625rem - 2.625rem - 3rem);
         padding: 1.5rem;
-        display: flex;
+        display: grid;
+        grid-template-column: 1fr 1fr;
         flex-direction: row;
         gap: 2.625rem;
         margin: 0 2.625rem 0 2.625rem;
