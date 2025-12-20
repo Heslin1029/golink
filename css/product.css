@@ -112,6 +112,7 @@
     align-items: center;
     overflow: hidden;
     max-height: calc(2.625rem + 3px + 3px);
+    transition: 400ms;
 }
 
 .product-features-active {
