@@ -1,93 +1,75 @@
 document.addEventListener('DOMContentLoaded', () => {
+    
+    // --- 1. Product Features Toggle ---
     const productFeatures = document.querySelectorAll('.product-features');
-
     productFeatures.forEach(feature => {
         feature.addEventListener('click', function() {
-            console.log('Clicked!'); // Debugging line
             this.classList.toggle('product-features-active');
         });
     });
-});
 
-document.querySelectorAll('.pricing-container-view-more').forEach(item => {
-    item.addEventListener('click', () => {
-        // 1. Get all elements with that class
-        const allItems = document.querySelectorAll('.pricing-container-view-more');
-
-        // 2. Remove the active class from every item
-        allItems.forEach(el => {
-            if (el !== item) {
-                el.classList.remove('pricing-container-view-more-active');
-            }
+    // --- 2. Pricing Accordion Logic ---
+    const pricingItems = document.querySelectorAll('.pricing-container-view-more');
+    pricingItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Remove active class from all other items
+            pricingItems.forEach(el => {
+                if (el !== item) {
+                    el.classList.remove('pricing-container-view-more-active');
+                }
+            });
+            // Toggle clicked item
+            item.classList.toggle('pricing-container-view-more-active');
         });
-        
-        // 3. Toggle the active class on the clicked item
-        item.classList.toggle('pricing-container-view-more-active');
     });
-    
-    
+
+    // --- 3. Slider Logic ---
     const slider = document.querySelector('.section-core-module-slider');
-    const buttons = document.querySelectorAll('.section-core-module-timeline');
-    const children = slider.children;
-    const totalChildren = children.length;
+    const timelines = document.querySelectorAll('.section-core-module-timeline');
     const nextBtn = document.getElementById('core-module-button-next');
     const prevBtn = document.getElementById('core-module-button-prev');
+    
+    // Safety check: only run if slider exists
+    if (!slider || timelines.length === 0) return;
 
+    const totalChildren = timelines.length;
+    let currentIndex = 0;
 
-    function updateSlider(targetIndex) {
-        const totalChildren = buttons.length;
+    function updateSlider(index) {
+        // Clamp the index to ensure it's within bounds
+        if (index < 0) index = 0;
+        if (index >= totalChildren) index = totalChildren - 1;
         
-        // Calculate percentage: each child is (100 / totalChildren)% of the slider's total width
-        // We move -100% per index to slide to the right
-        const movePercentage = -(targetIndex * (100 / totalChildren));
-        
-        slider.style.transform = `translateX(${movePercentage}%)`;
+        currentIndex = index;
 
-        // Update ID for active state
-        document.getElementById('core-module-active')?.removeAttribute('id');
-        buttons[targetIndex].id = 'core-module-active';
+        // Calculate movement
+        const percentagePerChild = 100 / totalChildren;
+        const translateValue = -(currentIndex * percentagePerChild);
+        slider.style.transform = `translateX(${translateValue}%)`;
+
+        // Update active state (ID-based as per your original code)
+        const currentActive = document.getElementById('core-module-active');
+        if (currentActive) {
+            currentActive.removeAttribute('id');
+        }
+        timelines[currentIndex].id = 'core-module-active';
     }
 
-    // Click logic for timeline items
-    buttons.forEach((btn, index) => {
+    // Timeline Click logic
+    timelines.forEach((btn, index) => {
         btn.addEventListener('click', () => updateSlider(index));
     });
 
-      
-
-    let currentIndex = 0;
-
-    function moveSlider(index) {
-        // Ensure the index stays within bounds (0 to total-1)
-        if (index < 0) index = 0;
-        if (index >= totalChildren) index = totalChildren - 1;
-
-        currentIndex = index;
-
-        // The shift value is the (100 / total number of children)
-        const percentagePerChild = 100 / totalChildren;
-        const translateValue = -(currentIndex * percentagePerChild);
-
-        slider.style.transform = `translateX(${translateValue}%)`;
-        
-        // Update active ID logic
-        document.getElementById('core-module-active')?.removeAttribute('id');
-        // Assuming the buttons/timeline elements correspond to the slider index
-        const timelines = document.querySelectorAll('.section-core-module-timeline');
-        if(timelines[currentIndex]) {
-            timelines[currentIndex].id = 'core-module-active';
-        }
-    }
-
-    // Event Listeners
-    nextBtn.addEventListener('click', () => {
+    // Navigation Buttons
+    nextBtn?.addEventListener('click', () => {
         if (currentIndex < totalChildren - 1) {
-            moveSlider(currentIndex + 1);
+            updateSlider(currentIndex + 1);
         }
     });
 
-    prevBtn.addEventListener('click', () => {
+    prevBtn?.addEventListener('click', () => {
         if (currentIndex > 0) {
-            moveSlider(currentIndex - 1);
+            updateSlider(currentIndex - 1);
         }
     });
+});
