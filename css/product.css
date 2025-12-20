@@ -111,6 +111,7 @@
     gap: 1rem;
     align-items: center;
     overflow: hidden;
+    max-height: 0rem;
 }
 
 .product-features-active {
