@@ -82,11 +82,12 @@ document.querySelectorAll('.pricing-container-view-more').forEach(item => {
     });
 
 
-    const productFeatures = document.querySelectorAll('.product-features');
+const productFeatures = document.querySelectorAll('.product-features');
 
-productFeatures.forEach(feature => {
-    feature.addEventListener('click', function() {
-        this.classList.toggle('product-features-active');
+    productFeatures.forEach(feature => {
+        feature.addEventListener('click', function() {
+            console.log('Clicked!'); // Debugging line
+            this.classList.toggle('product-features-active');
+        });
     });
-});
 });
